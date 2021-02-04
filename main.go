@@ -39,7 +39,7 @@ func get_external() string {
 						}
 			defer resp.Body.Close()
 			content, _ := ioutil.ReadAll(resp.Body)  
-			fmt.Println("获取到的外网ip为:", string(content))
+			// fmt.Println("获取到的外网ip为:", string(content))
 			return string(content)
 		}
 /**
@@ -88,7 +88,7 @@ func _main(args []*string) (_err error) {
 			InstanceId = *n.InstanceId
 		}
 	}
-	fmt.Println(InstanceId)
+	// fmt.Println(InstanceId)
 	// 获取ip地址
 	clientip := get_external()
 
@@ -102,7 +102,7 @@ func _main(args []*string) (_err error) {
 	  if _err != nil {
 		return _err
 	  }
-
+	fmt.Println("dns修改完成")
 	return _err
 }
 
