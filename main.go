@@ -87,7 +87,7 @@ func _main(args []*string) (_err error) {
 	for _, n := range domainlist {
 		requsetmap = *n
 	}
-	fmt.Println(*requsetmap.RecordId)
+
 	// 获取ip地址
 	clientip := get_external()
 	fmt.Println("获取到外网ip为:", clientip)
@@ -107,6 +107,7 @@ func _main(args []*string) (_err error) {
 	  if _err != nil {
 		return _err
 	  }
+	fmt.Printf("dns修改完成")
 	return _err
 }
 
