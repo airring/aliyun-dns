@@ -1,5 +1,7 @@
 # aliyun-dns
 
+通过阿里云公共api调用自动修改dns解析信息,实现ddns功能
+
 ## 配置修改
 修改[config.yaml](./config.yaml)文件中
 
